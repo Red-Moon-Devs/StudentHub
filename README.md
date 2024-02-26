@@ -51,5 +51,5 @@ CLERK_SECRET_KEY= *Your key*
 Finally change the name of the .env.example file into .env.local.
 
 # EVENTUAL BUGS
-## Clerk
-- If the logo of the connected account is not showing up in the topbar component, please make sure to enable organizations in your clerk application.
+## The connected account logo is not showing up
+If the logo of the connected account is not showing up in the topbar component, please make sure to enable organizations in your clerk application.
