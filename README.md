@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# INSTALL PACKAGES
+## Install all
+`npm install @clerk/nextjs uploadthing @uploadthing/react svix tailwindcss-animate`
 
-## Getting Started
+### Install Clerk
+Simple and secure user authentication, complete with everything you need out-of-the-box to provide a secure experience for your users.
 
-First, run the development server:
+`npm install @clerk/nextjs`
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Install UploadThing
+UploadThing is the easiest way to add file uploads to your full stack TypeScript application.
+Many services have tried to build a "better S3", but in our opinion, none found the right compromise of ownership, flexibility and safety.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+`npm install uploadthing @uploadthing/react`
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Install Svix
+Webhooks as a Service. Build a secure, reliable, and scalable webhook platform in minutes using the Svix webhook service.
+Webhooks require a lot more engineering time, resources and ongoing maintenance than you would first expect.
+Building a secure, reliable, and scalable webhook service is hard and time consuming. We built it so you can focus on what matters most, your business.
+Svix makes sending webhooks easy and reliable by offering webhook sending as a service. With Svix you can start sending webhooks in minutes, while ensuring robust deliverability, and a great developer experience for your users.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+`npm install svix`
 
-## Learn More
+### Install tailwindcss-animate
 
-To learn more about Next.js, take a look at the following resources:
+`npm install tailwindcss-animate`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# AUTHENTICATION WITH CLERK
+### Create your Clerk account
+Follow the link below to create your clerk account :
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+https://clerk.com/
 
-## Deploy on Vercel
+After creating your account, create an application in clerk which will be linked to this project.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Edit the .env.example file
+Add the keys of your clerk application in the .env.example file.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY= *Your key*
+
+CLERK_SECRET_KEY= *Your key*
+
+### Rename .env.example file into .env.local
+Finally change the name of the .env.example file into .env.local.
