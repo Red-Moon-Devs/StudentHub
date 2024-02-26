@@ -11,6 +11,9 @@ Simple and secure user authentication, complete with everything you need out-of-
 
 `npm install @clerk/nextjs`
 
+### Install Clerk themes
+`npm install @clerk/themes`
+
 ### Install UploadThing
 UploadThing is the easiest way to add file uploads to your full stack TypeScript application.
 Many services have tried to build a "better S3", but in our opinion, none found the right compromise of ownership, flexibility and safety.
@@ -46,3 +49,7 @@ CLERK_SECRET_KEY= *Your key*
 
 ### Rename .env.example file into .env.local
 Finally change the name of the .env.example file into .env.local.
+
+# EVENTUAL BUGS
+## Clerk
+- If the logo of the connected account is not showing up in the topbar component, please make sure to enable organizations in your clerk application.
