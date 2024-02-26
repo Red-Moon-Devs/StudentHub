@@ -1,6 +1,10 @@
 # INSTALL PACKAGES
 ## Install all
-`npm install @clerk/nextjs uploadthing @uploadthing/react svix tailwindcss-animate`
+```
+npm install
+OR
+npm i
+```
 
 ### Install Clerk
 Simple and secure user authentication, complete with everything you need out-of-the-box to provide a secure experience for your users.
